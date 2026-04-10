@@ -1,10 +1,6 @@
-class User:
-    
-    def __init__(self, name: str, age: int):
-       
-        self.name = name
-        self.age = age
-
-    def is_adult(self) -> bool:
-        
-        return self.age >= 18
+def user_info(name: str, age: int):
+    return {
+        "name": name,
+        "age": age,
+        "is_adult": age >= 18
+    }
